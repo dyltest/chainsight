@@ -1,3 +1,5 @@
+## 演示地址：http://43.128.12.144:8000/
+
 # ChainSight 🧬
 
 A real-time cryptocurrency data dashboard with an elegant single-page UI. Live market data from CoinGecko, proxied through a caching FastAPI backend. Zero frontend build step — pure HTML + ECharts.
