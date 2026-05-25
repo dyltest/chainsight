@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  chainsight:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: chainsight
+    ports:
+      - "8000:8000"
+    volumes:
+      # Mount static files so you can update the frontend without rebuilding
+      - ./static:/app/../static:ro
+    restart: unless-stopped
+    environment:
+      - TZ=Asia/Shanghai
